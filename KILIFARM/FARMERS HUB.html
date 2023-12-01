@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        h1, p {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            padding: 15px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Farmer's Hub</h1>
+    <p>Select one of our suggested solutions:</p>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <button onclick="navigateTo('FARMER STORE.html')">Farmer Store</button>
+        <button onclick="navigateTo('FARMERS MACHINERY.html')">Farmer's Machinery</button>
+        <button onclick="navigateTo('FARMER EDUCATOR.html')">Farmer Educator</button>
+
+        <button onclick="navigateTo('PEST AND DISEASE CONTROL.html')">Pest and Disease Control</button>
+        <button onclick="navigateTo('MANAGE YOUR FARM.html')">Manage Your Farm</button>
+        <button onclick="navigateTo('AGRICULTURAL MARKETS.html')">Agricultural Markets</button>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
+

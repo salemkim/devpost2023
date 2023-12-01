@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT in Agriculture Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 2em;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Style for the video container */
+        #video-container {
+            margin: 2em;
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Style for the video */
+        video {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IoT in Agriculture Simulation</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Real-time Weather Data</h2>
+            <p>
+                Temperature: <span id="temperature">25°C</span><br>
+                Humidity: <span id="humidity">60%</span><br>
+                Precipitation: <span id="precipitation">0.5 mm</span>
+            </p>
+        </article>
+
+        <!-- New video container -->
+        <div id="video-container">
+            <h2>Smart Irrigation System</h2>
+            <!-- Replace 'your_video_url.mp4' with the actual URL or path of your video -->
+            <video controls>
+                <source src="WhatsApp Video 2023-12-01 at 04.59.34.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Agriculture IoT Simulation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simulate updating IoT data every 5 seconds
+        setInterval(() => {
+            // Placeholder data (replace with real IoT data)
+            const temperature = Math.floor(Math.random() * 10) + 20; // Between 20 and 30
+            const humidity = Math.floor(Math.random() * 30) + 50; // Between 50 and 80
+            const precipitation = Math.random().toFixed(1); // Between 0.0 and 1.0
+
+            // Update the displayed data
+            document.getElementById('temperature').innerText = `${temperature}°C`;
+            document.getElementById('humidity').innerText = `${humidity}%`;
+            document.getElementById('precipitation').innerText = `${precipitation} mm`;
+        }, 5000); // Update every 5 seconds
+    </script>
+</body>
+</html>
+

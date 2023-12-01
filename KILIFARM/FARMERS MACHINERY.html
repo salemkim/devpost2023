@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Machinery Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2em;
+        }
+
+        article {
+            flex: 0 0 300px;
+            margin: 1em;
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farm Machinery Hub</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Tractor Model XYZ</h2>
+            <p>Powerful tractor suitable for various farming tasks. Equipped with IoT for real-time monitoring and efficiency.</p>
+            <p>Rent: $50 per day</p>
+            <button onclick="rentMachinery('Tractor Model XYZ')">Rent Now</button>
+            <button onclick="purchaseMachinery('Tractor Model XYZ')">Purchase</button>
+        </article>
+
+        <article>
+            <h2>Harvester Pro 2000</h2>
+            <p>Efficient harvester for large-scale crop harvesting. IoT integration for optimal performance and yield.</p>
+            <p>Rent: $100 per day</p>
+            <button onclick="rentMachinery('Harvester Pro 2000')">Rent Now</button>
+            <button onclick="purchaseMachinery('Harvester Pro 2000')">Purchase</button>
+        </article>
+
+        <article>
+            <h2>Smart Plowing System</h2>
+            <p>Revolutionary plowing system with IoT sensors for precision and reduced environmental impact.</p>
+            <p>Rent: $75 per day</p>
+            <button onclick="rentMachinery('Smart Plowing System')">Rent Now</button>
+            <button onclick="purchaseMachinery('Smart Plowing System')">Purchase</button>
+        </article>
+
+        <!-- Add more machinery articles as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Farm Machinery Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function rentMachinery(machineryName) {
+            alert(`You have chosen to rent ${machineryName}. Contact us for further details.`);
+            // Implement actual rental logic here (e.g., contact form or redirect to rental information page)
+        }
+
+        function purchaseMachinery(machineryName) {
+            alert(`You have chosen to purchase ${machineryName}. Visit our store for pricing and details.`);
+            // Implement actual purchase logic here (e.g., redirect to product page)
+        }
+    </script>
+</body>
+</html>

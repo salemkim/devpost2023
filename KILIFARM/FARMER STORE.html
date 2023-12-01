@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Inputs Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2em;
+        }
+
+        article {
+            flex: 0 0 300px;
+            margin: 1em;
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farm Inputs Store</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>High-Quality Fertilizer</h2>
+            <p>Boost your crop yield with our premium fertilizer. Rich in nutrients for healthy plant growth.</p>
+            <p>Price: ksh200 per bag</p>
+            <button onclick="buyProduct('High-Quality Fertilizer')">Buy Now</button>
+        </article>
+
+        <article>
+            <h2>Organic Seeds</h2>
+            <p>Plant the foundation for a successful harvest. Our organic seeds ensure robust and healthy crops.</p>
+            <p>Price: ksh100 per pack</p>
+            <button onclick="buyProduct('Organic Seeds')">Buy Now</button>
+        </article>
+
+        <article>
+            <h2>Pest Control Solution</h2>
+            <p>Protect your crops from pests. Our effective pest control solution keeps your farm healthy.</p>
+            <p>Price: ksh150 per bottle</p>
+            <button onclick="buyProduct('Pest Control Solution')">Buy Now</button>
+        </article>
+
+        <!-- Add more product articles as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Farm Inputs Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert(`Thank you for purchasing ${productName}!`);
+            // Implement actual purchase logic here (e.g., redirect to a payment gateway)
+        }
+    </script>
+</body>
+</html>
